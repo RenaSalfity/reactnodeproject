@@ -1,0 +1,25 @@
+body, html {
+  height: 100%; /* Ensure the body and HTML cover the full viewport height */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the App spans the full height of the viewport */
+}
+
+.main {
+  flex-grow: 1; /* Allow the main content to expand and push the footer down */
+}
+
+footer {
+  background-color: #e3f5dc;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: auto; /* Push the footer to the bottom */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
